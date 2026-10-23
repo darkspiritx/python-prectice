@@ -1,3 +1,6 @@
+
+#This is my bigenner to advance python prectices question!!!!
+
 #Q1. Add Two Numbers
 
 num1=int(input("Enter a first number: "))
@@ -170,5 +173,77 @@ if count>0:
 else:
   print("Number not found")
 
-#I'm Mohit Prajapati from Prayagraj
+#Q20. Remove Duplicates from a List
+
+numbers = [10, 20, 10, 30, 20, 40, 30]
+unique=[]
+
+for num in numbers:
+    if num not in unique:
+        unique.append(num)
+print(unique)
+
+#Q21 Count even and odd digits in a number.
+
+n=123456
+even=0
+odd=0
+
+while n>0:
+    digit=n%10
+    if digit % 2 ==0:
+        
+        even+=1
+    else:
+            odd+=1
+    n=n//10
+print(f"even is: {even} \n odd is: {odd}")
+
+#Q22 Check whether a number is a palindrome.
+
+n = 122
+original = n
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+if original == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+#Q23 Find the factorial of a number using a while loop.
+
+n=int(input("Enter a number"))
+fact=1
+i=1
+while i<=n:
+    fact=fact*i
+    i=i+1
+print(fact)
+
+#Q24 Find the second largest number in a list.
+
+numbers = [12, 45, 7, 89, 23]
+
+larg = numbers[0]
+sec = float('-inf')
+
+for num in numbers:
+    if num > larg:
+        sec = larg
+        larg = num
+
+    elif num < larg and num > sec:
+        sec = num
+
+print("Second largest:", sec)
+
+
+
+# I'm Mohit Prajapati from Prayagraj
+
 
