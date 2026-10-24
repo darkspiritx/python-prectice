@@ -230,7 +230,7 @@ print(fact)
 numbers = [12, 45, 7, 89, 23]
 
 larg = numbers[0]
-sec = float('-inf')
+sec = float('-inf)
 
 for num in numbers:
     if num > larg:
@@ -242,8 +242,70 @@ for num in numbers:
 
 print("Second largest:", sec)
 
+#Q Count Even and Odd Numbers
+
+numbers = [12, 7, 8, 15, 20, 3, 11, 6]
+even=0
+odd=0
+for num in numbers:
+    if num%2==0:
+        even+=1
+    else:
+        odd+=1
+print(f"Even: {even} \n Odd: {odd}")
+
+#Q: Move All Zeros to the End
+
+numbers = [0, 5, 0, 3, 8, 0, 2]
+temp=[]
+
+for num in numbers:
+    if num !=0:
+        temp.append(num)
+for num in numbers:
+        if num==0:
+         temp.append(num)
+
+print(temp)
 
 
-# I'm Mohit Prajapati from Prayagraj
+
+# Q: Find the Missing Number
+
+numbers = [1, 2, 3, 5, 6]
+missing=[]
+for num in range(1,numbers[-1]+1):
+    if num not in numbers:
+        missing.append(num)
+print(f"Missing number is: {missing[0]}")
+
+#Q: Sum of Digits ka correct Python code.
+
+num = 1234
+total=0
+while num>0:
+    digit=num%10
+    total += digit
+    num=num//10
+print(total)
+
+#Q:Count Digits
+num = 58321
+count=0
+while num>0:
+    digit=num%10
+    count+=1
+    num=num//10
+print(f"Number of digit:{count}")
+
+
+
+
+
+
+
+
+
+# #I'm Mohit Prajapati from Prayagraj
 
 
