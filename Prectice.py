@@ -230,7 +230,7 @@ print(fact)
 numbers = [12, 45, 7, 89, 23]
 
 larg = numbers[0]
-sec = float('-inf)
+sec = float('-inf')
 
 for num in numbers:
     if num > larg:
